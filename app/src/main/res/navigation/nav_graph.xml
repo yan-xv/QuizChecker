@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.rsschool.yanxv.quizchecker.view.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_listQuizFragment"
+            app:destination="@id/listQuizFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_tableFragment"
+            app:destination="@id/tableFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listQuizFragment"
+        android:name="com.rsschool.yanxv.quizchecker.view.list_quiz.ListQuizFragment"
+        android:label="fragment_quiz_list"
+        tools:layout="@layout/fragment_quiz_list" />
+    <fragment
+        android:id="@+id/tableFragment"
+        android:name="com.rsschool.yanxv.quizchecker.view.table.TableFragment"
+        android:label="fragment_table"
+        tools:layout="@layout/fragment_table" />
+</navigation>

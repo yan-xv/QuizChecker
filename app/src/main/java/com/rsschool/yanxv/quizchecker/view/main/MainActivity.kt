@@ -1,7 +1,8 @@
-package com.rsschool.yanxv.quizchecker
+package com.rsschool.yanxv.quizchecker.view.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.rsschool.yanxv.quizchecker.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
